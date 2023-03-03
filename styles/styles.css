@@ -1,29 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@media screen and (min-width: 1000px) {
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vw;
+  }
+  #main-doc {
+    padding-left: 300px;
+  }
+}
+
 * {
-  box-sizing: content-box;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
-#flexContainer {
-  display: flex;
-  flex-direction: row;
-  height: 100vh;
+
+#main-doc {
+  padding-top: 15px;
+  padding-left: 10px;
+  font-weight: 300;
+  padding-left: 300px;
+  text-align: justify;
+  padding-right: 30px;
 }
 
-#flexContainer > #navbar {
+#navbar {
   position: fixed;
-  top: 0;
-  left: 0;
-  background-color: white;
-  padding: 10px;
-  z-index: 1;
-}
-.fixedNavBar {
-
-}
-
-#flexContainer > #main-doc {
-  flex: 1;
+  width: 250px;
+  height: 100vw;
+  padding-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  background-color: rgb(246, 246, 246);
+  border-right: 2px solid darkcyan;
 }
 
-ul > li {
-  border: 2px solid red;
+
+a {
+  text-decoration: overline;
+}
+
+/* links */
+a:link {
+  color: black;
+  text-decoration: overline;
+}
+a:visited {
+  color: darkgoldenrod;
+}
+a:hover {
+  color: gold;
+}
+a:active {
+  color: brown;
+}
+
+
+
+
+
+
+#navbar a {
+  display: block;
+  text-align: center;
+  border: 1px solid gainsboro;
+  padding: 15px;
+  margin: 0;
+  text-decoration: none;
+}
+
+.navHeader {
+  font-size: 30px;
+  text-align: left;
+  font-weight: 300;
+  padding-top: 4px;
+  padding-bottom: 6px;
+  padding-left: 10px;
+  padding-right: 2px;
+  color: white; 
+  text-shadow: rgb(76, 56, 4) 0.1em 0.025em 0.1em;
+}
+
+.contentHeaders {
+  font-weight: 900;
+  font-size: 30px;
+}
+
+p {
+  padding: 8px;
+}
+
+.z {
+  background: linear-gradient(100deg, gold, 60%, cyan);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 300;
 }
